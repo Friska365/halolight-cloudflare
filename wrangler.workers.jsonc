@@ -1,0 +1,28 @@
+/**
+ * Wrangler Configuration for Cloudflare Workers (CLI Deploy)
+ *
+ * This configuration is used when deploying via `pnpm deploy` (opennextjs-cloudflare)
+ * For Cloudflare Pages Git integration, use wrangler.jsonc
+ *
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "halolight-cloudflare",
+	"main": ".open-next/worker.js",
+	"compatibility_date": "2025-03-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"assets": {
+		"directory": ".open-next/assets"
+	},
+	"observability": {
+		"enabled": true
+	}
+	/**
+	 * Smart Placement
+	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+	 */
+	// "placement": { "mode": "smart" }
+}

@@ -1,0 +1,46 @@
+/**
+ * Wrangler Configuration for Cloudflare Pages
+ *
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/pages/functions/wrangler-configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "halolight-cloudflare",
+	"compatibility_date": "2025-03-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	/**
+	 * Pages Build Output Directory
+	 * Required for Cloudflare Pages to recognize OpenNext build output
+	 */
+	"pages_build_output_dir": ".open-next",
+	"observability": {
+		"enabled": true
+	}
+	/**
+	 * Environment Variables
+	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+	 */
+	// "vars": { "MY_VARIABLE": "production_value" }
+	/**
+	 * Note: Use secrets to store sensitive data.
+	 * https://developers.cloudflare.com/workers/configuration/secrets/
+	 */
+	/**
+	 * KV Namespaces
+	 * https://developers.cloudflare.com/kv/
+	 */
+	// "kv_namespaces": [{ "binding": "MY_KV", "id": "xxx" }]
+	/**
+	 * D1 Databases
+	 * https://developers.cloudflare.com/d1/
+	 */
+	// "d1_databases": [{ "binding": "MY_DB", "database_id": "xxx" }]
+	/**
+	 * R2 Buckets
+	 * https://developers.cloudflare.com/r2/
+	 */
+	// "r2_buckets": [{ "binding": "MY_BUCKET", "bucket_name": "xxx" }]
+}
