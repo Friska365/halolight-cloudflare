@@ -76,7 +76,7 @@ export async function loginAction(
 ): Promise<ActionResult<{ user: User; token: string }>> {
   try {
     const result = await serverFetch<{ user: User; token: string }>(
-      "/user/login",
+      "/auth/login",
       {
         method: "POST",
         body: JSON.stringify({
@@ -133,7 +133,7 @@ export async function logoutAction(): Promise<ActionResult> {
  */
 export async function getCurrentUserAction(): Promise<ActionResult<User>> {
   try {
-    const user = await serverFetch<User>("/user/current")
+    const user = await serverFetch<User>("/auth/me")
     return { success: true, data: user }
   } catch (error) {
     return {
@@ -212,7 +212,7 @@ export async function updateUserAction(
 ): Promise<ActionResult<User>> {
   try {
     const user = await serverFetch<User>(`/users/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify(formData),
     })
 

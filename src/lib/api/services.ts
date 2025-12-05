@@ -73,7 +73,7 @@ export const userService = {
   // 更新用户
   updateUser: (id: string, data: Partial<User>) =>
     request<User>(`/users/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify(data),
     }),
 
@@ -83,13 +83,13 @@ export const userService = {
 
   // 登录
   login: (email: string, password: string) =>
-    request<LoginResponse>("/user/login", {
+    request<LoginResponse>("/auth/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
     }),
 
   // 获取当前用户
-  getCurrentUser: () => request<User>("/user/current"),
+  getCurrentUser: () => request<User>("/auth/me"),
 
   // 获取角色列表
   getRoles: () => request<Role[]>("/roles"),
@@ -292,7 +292,7 @@ export const teamService = {
   // 更新团队
   updateTeam: (id: string, data: TeamUpdateRequest) =>
     request<Team>(`/teams/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify(data),
     }),
 
@@ -330,7 +330,7 @@ export const roleService = {
   // 更新角色
   updateRole: (id: string, data: RoleUpdateRequest) =>
     request<RoleDetail>(`/roles/${id}`, {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify(data),
     }),
 

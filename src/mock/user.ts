@@ -66,7 +66,7 @@ Mock.mock(/\/api\/users\/[a-zA-Z0-9-]+/, "get", () => {
 })
 
 // 用户登录
-Mock.mock("/api/user/login", "post", (options: { body: string }) => {
+Mock.mock("/api/auth/login", "post", (options: { body: string }) => {
   const { email, password } = JSON.parse(options.body)
   if (email && password) {
     return {
@@ -93,7 +93,7 @@ Mock.mock("/api/user/login", "post", (options: { body: string }) => {
 })
 
 // 获取当前用户
-Mock.mock("/api/user/current", "get", () => {
+Mock.mock("/api/auth/me", "get", () => {
   return {
     code: 200,
     message: "success",
@@ -121,7 +121,7 @@ Mock.mock("/api/users", "post", () => {
 })
 
 // 更新用户
-Mock.mock(/\/api\/users\/[a-zA-Z0-9-]+/, "put", () => {
+Mock.mock(/\/api\/users\/[a-zA-Z0-9-]+/, "patch", () => {
   return {
     code: 200,
     message: "更新成功",
