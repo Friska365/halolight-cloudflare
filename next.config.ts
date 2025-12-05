@@ -2,6 +2,13 @@ import type { NextConfig } from "next";
 
 const isProduction = process.env.NODE_ENV === "production";
 
+// 后端 API 地址
+const API_BACKEND_URL =
+  process.env.API_BACKEND_URL ||
+  (isProduction
+    ? "https://halolight-api-nestjs.h7ml.cn"
+    : "http://localhost:3000");
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
 
@@ -108,6 +115,21 @@ const nextConfig: NextConfig = {
   // 重定向规则
   async redirects() {
     return [];
+  },
+
+  // API 代理 - 将 /api/* 请求转发到后端
+  async rewrites() {
+    // 如果使用 Mock 模式，不需要代理
+    if (process.env.NEXT_PUBLIC_MOCK === "true") {
+      return [];
+    }
+
+    return [
+      {
+        source: "/api/:path*",
+        destination: `${API_BACKEND_URL}/api/:path*`,
+      },
+    ];
   },
 
   // 忽略构建时的 ESLint 错误（CI 中单独检查）

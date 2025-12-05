@@ -9953,7 +9953,7 @@ interface PubSubMessage {
     // client.
     readonly contentType: string;
     // Set to 1 when the payload is a UTF-8 string
-    // https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901063
+    // https:/docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html#_Toc3901063
     readonly payloadFormatIndicator: number;
     // Pub/Sub (MQTT) payloads can be UTF-8 strings, or byte arrays.
     // You can use payloadFormatIndicator to inspect this before decoding.

@@ -113,6 +113,21 @@ export interface UserFilterParams extends PaginationParams {
   roleId?: string
 }
 
+/** 登录请求 */
+export interface LoginRequest {
+  email: string
+  password: string
+  remember?: boolean
+}
+
+/** 注册请求 */
+export interface RegisterRequest {
+  name: string
+  email: string
+  password: string
+  confirmPassword: string
+}
+
 /** 登录响应 */
 export interface LoginResponse {
   user: User
